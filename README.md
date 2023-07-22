@@ -1,4 +1,4 @@
-# ZK Circuit Implementation Challenge
+# zkSNARK Circuit Implementation Challenge
 
 This is My Module 3 Assessement of POLY PROOF Advanced Cource at Metacrafters Training.
 
