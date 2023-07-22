@@ -2,17 +2,7 @@
 
 This is My Module 3 Assessement of POLY PROOF Advanced Cource at Metacrafters Training.
 
-## Owner
-**Sanjay Choudhary @ Chandigarh University**
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Functionality](#functionality)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+# owner @Gaurav from Chandigarh University
 
 ## Introduction
 
@@ -35,30 +25,31 @@ The Zardkat circuit performs the following steps:
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/gmchad/zardkat.git
    ```
 
 ## Install the dependencies:
 
-    ```bash
+    ```
     cd zardkat
     npm i
     ```
 ## Usage
 1. Compile the Circom circuit:
 
-    ```bash
+    ```
     npx hardhat circom
     ```
 2. Run the deployment script:
 
-    ```bash
+    ```
     Copy code
     npx hardhat run scripts/deploy.ts --network goerli
     ```
 This will deploy the Zardkat circuit on the Goerli network.
-
+# video explamation
+https://www.loom.com/share/a974db4a97c04f20ac06fa008cfa14db?sid=e21bcb3f-14ad-4e95-89d9-28162d5376eb
 ## Credits
 
 The logic gates circuit implementation is based on the `circuits/gates.circom` from the [circomlib](https://github.com/iden3/circomlib) repository by iden3.
