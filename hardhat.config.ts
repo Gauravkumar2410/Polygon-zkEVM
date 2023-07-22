@@ -3,11 +3,8 @@ import "@nomicfoundation/hardhat-toolbox";
 // https://github.com/projectsophon/hardhat-circom
 import "hardhat-circom";
 // circuits
-import circuits = require('./circuits.config.json');
-
-
-require("dotenv").config();
-
+import circuits = require('./circuits.config.json')
+import 'dotenv/config'
 // set env var to the root of the project
 process.env.BASE_PATH = __dirname;
 
@@ -15,12 +12,6 @@ process.env.BASE_PATH = __dirname;
 import "./tasks/newcircuit.ts"
 
 const config: HardhatUserConfig = {
-  networks: {
-		goerli: {
-			url: 'https://ethereum-goerli.publicnode.com',
-			accounts: [process.env.PRIVATE_KEY as string]
-		},
-	},
   solidity: {
     compilers: [
       {
@@ -31,6 +22,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks:{
+  mumbai: {
+    url: `https://rpc.ankr.com/polygon_mumbai`,
+    accounts: [process.env.MUMBAIPRIVATEKEY]
+  }
+},
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
